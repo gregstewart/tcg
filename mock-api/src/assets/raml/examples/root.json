@@ -1,0 +1,6 @@
+{
+  "resources": [
+    {"href": "api/encounters/"},
+    {"href": "api/compendium/"}
+  ]
+}

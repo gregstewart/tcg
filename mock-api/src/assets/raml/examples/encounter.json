@@ -1,0 +1,29 @@
+{
+  "encounter": {
+    "id": "1",
+    "dateCreated": "someUTCDateTimeStamp",
+    "dateUpdated": "someUTCDateTimeStamp",
+    "opponents": [
+      {
+        "id": 1,
+        "name": "Some Name",
+        "level": 1,
+        "stats": {
+          "health": 100
+        }
+      }
+    ],
+    "players": [
+      {
+        "id": 1,
+        "name": "Some Name",
+        "level": 1,
+        "stats": {
+          "health": 100
+        }
+      }
+    ],
+    "currentRoundId": 1,
+    "href": "encounters/1"
+  }
+}

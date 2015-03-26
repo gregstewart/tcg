@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Encounters",
+  "description": "A list of encounters in progress",
+  "type": "array",
+  "properties": {
+    "items": {
+      "type": "object",
+      "properties": {
+        "id": "string",
+        "dateCreated": "dateTime",
+        "dateUpdated": "dateTime",
+        "href": "string"
+      }
+    }
+  }
+}

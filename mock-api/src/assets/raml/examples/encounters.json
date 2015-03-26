@@ -1,0 +1,16 @@
+{
+  "encounters": [
+    {
+      "id": "1",
+      "dateCreated": "someUTCDateTimeStamp",
+      "dateUpdated": "someUTCDateTimeStamp",
+      "href": "encounters/1"
+    },
+    {
+      "id": "2",
+      "dateCreated": "someUTCDateTimeStamp",
+      "dateUpdated": "someUTCDateTimeStamp",
+      "href": "encounters/2"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+#%RAML 0.8
+---
+title: TCG API
+baseUri: http://tcg.tcias.co.uk/api/{version}
+version: v1
+mediaType: application/json
+
+/:
+  description: Root resource
+  get:
+    description: returns all registered resources
+    responses:
+      200:
+        body:
+          example: !include examples/root.json
+/encounters:
+  description: Collection of active encounters
+  get:
+    description: get a list of active encounters
+    responses:
+      200:
+        body:
+          schema: !include schemas/encounters.json
+          example: !include examples/encounters.json
+  post:
+    description: start a new encounter
+    responses:
+      201:
+        body:
+  /{encounterId}:
+    get:
+      description: returns the encounter
+      responses:
+        200:
+          body:
+            example: !include examples/encounter.json
+        404:
+          body:
+            example: !include examples/encounter-not-found.json
+    /round:
+      /{id}:
+        put:
+          description: updates the state of the current round
+        get:
+          description: returns the state of the current round
+/compedium:
+  description: returns available resources
+  get:
+  /monsters:
+    description: returns a list of monsters
+    get:
+      responses:
+        200:
+          body:
+            example: !include examples/monsters.json
+    /{id}:
+      description: returns the details for this monster
+      get:
+        responses:
+          200:
+            body:
+              example: !include examples/monster.json
