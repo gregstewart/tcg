@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 
     express: {
       options: {
-        port: process.env.PORT || 3001,
+        port: process.env.PORT || 3002,
         script: 'src/app.js'
       },
       development: {
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       test: {
         options: {
           node_env: 'test',
-          port: 3001
+          port: 3002
         }
       }
     },

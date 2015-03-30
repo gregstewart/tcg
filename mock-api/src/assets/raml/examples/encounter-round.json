@@ -9,7 +9,7 @@
         "name": "Some Name",
         "level": 1,
         "stats": {
-          "health": 100
+          "health": 73
         }
       }
     ],
@@ -19,11 +19,11 @@
         "name": "Some Name",
         "level": 1,
         "stats": {
-          "health": 100
+          "health": 50
         }
       }
     ],
     "href": "encounters/1",
-    "nextRound": "encounters/1/round/0"
+    "nextRound": "encounters/1/round/1"
   }
 }

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "type": "Tank"
+  },
+  {
+    "id": 2,
+    "type": "Healer"
+  },
+  {
+    "id": 3,
+    "type": "Damage"
+  }
+]

@@ -13,6 +13,111 @@ mediaType: application/json
       200:
         body:
           example: !include examples/root.json
+/sign-in:
+  description: Sign in endpoint
+  post:
+    description: |
+      Sign in to account using a third party service, that should return a valid token
+    body:
+      example: |
+        {
+          "thirdPartyToken": "QWxhZGRpbjpvcGVuIHNlc2FtZQ=="
+        }
+    responses:
+      401:
+        body:
+          example: |
+            {
+              "Unauthorized": "Invalid credentials"
+            }
+      201:
+        headers:
+            Authorization:
+              example: "Authorization = Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=="
+        body:
+          example: |
+            {
+              "Success": "You are logged in"
+            }
+/sign-up:
+  description: Sign up endpoint
+  post:
+    description: |
+      Receive response from third party service to authenticate and capture name, email and token
+    body:
+      example: |
+        {
+          "name": "Some Name",
+          "email": "someone@somewhere.com",
+          "authToken": "QWxhZGRpbjpvcGVuIHNlc2FtZQ=="
+        }
+    responses:
+      201:
+        headers:
+          Authorization:
+            example: "Authorization = Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=="
+          body:
+            example: |
+              {
+                "success": "Your account has been created"
+              }
+/me:
+  description: My endpoint
+  get:
+    description: returns endpoints available to me
+    responses:
+      401:
+        body:
+          example: |
+            {
+              "unauthorized": "You are not logged in"
+            }
+      200:
+        body:
+          example: |
+            {
+              "accountHref": "me/account",
+              "playerChareactersHref": "me/player-characters"
+            }
+  /account:
+    description: Account details
+    get:
+      description: returns my account details
+      responses:
+        403:
+          body:
+            example: |
+              {
+                "forbidden": "You can't access this resource"
+              }
+        401:
+          body:
+            example: |
+              {
+                "unauthorized": "You are not logged in"
+              }
+        200:
+          body:
+            example: |
+              {
+                "name": "Your Name",
+                "email": "someone@somewhere.com"
+              }
+  /player-characters:
+    description: All of my characters
+    get:
+      description: return a list of my toons
+      responses:
+        200:
+          body:
+            example: !include examples/player-characters-list.json
+    /{id}:
+      get:
+        description: returns the details of a player character
+        responses:
+          200:
+            body:
+              example: !include examples/player-character.json
 /encounters:
   description: Collection of active encounters
   get:
@@ -41,8 +146,13 @@ mediaType: application/json
       /{id}:
         put:
           description: updates the state of the current round
+
         get:
           description: returns the state of the current round
+          responses:
+            200:
+              body:
+                example: !include examples/encounter-round.json
 /compedium:
   description: returns available resources
   get:
@@ -60,3 +170,17 @@ mediaType: application/json
           200:
             body:
               example: !include examples/monster.json
+  /races:
+    description: returns a list of character races
+    get:
+      responses:
+        200:
+          body:
+            example: !include examples/compendium-races.json
+  /arche-types:
+    description: returns a list of character archetypes
+    get:
+      responses:
+        200:
+          body:
+            example: !include examples/compendium-arche-types.json

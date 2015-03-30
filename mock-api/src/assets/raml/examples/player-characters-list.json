@@ -1,0 +1,34 @@
+{
+  "playerCharacters" : [
+    {
+      "id": 1,
+      "name":"Red Garnet",
+      "level": 1,
+      "stats": {
+        "health": 100
+      },
+      "type": "damage",
+      "class": "rogue"
+    },
+    {
+      "id": 2,
+      "name":"Tree Hugger",
+      "level": 1,
+      "stats": {
+        "health": 100
+      },
+      "type": "healer",
+      "class": "druid"
+    },
+    {
+      "id": 3,
+      "name":"Meatshield",
+      "level": 1,
+      "stats": {
+        "health": 100
+      },
+      "type": "tank",
+      "class": "warrior"
+    }
+  ]
+}

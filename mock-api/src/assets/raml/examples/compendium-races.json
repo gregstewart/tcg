@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Human"
+  },
+  {
+    "id": 2,
+    "name": "Orc"
+  },
+  {
+    "id": 3,
+    "name": "Dwarf"
+  }
+]

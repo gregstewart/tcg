@@ -1,5 +1,9 @@
 {
   "resources": [
+    {"href": "api/sign-in/"},
+    {"href": "api/sign-up/"},
+    {"href": "api/me/account/"},
+    {"href": "api/me/player-characters/"},
     {"href": "api/encounters/"},
     {"href": "api/compendium/"}
   ]
