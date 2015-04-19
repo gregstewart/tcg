@@ -7,7 +7,7 @@
       "stats": {
         "health": 100
       },
-      "type": "damage",
+      "type": "Melee Damage Dealer",
       "class": "rogue"
     },
     {
@@ -17,7 +17,7 @@
       "stats": {
         "health": 100
       },
-      "type": "healer",
+      "type": "Healer",
       "class": "druid"
     },
     {
@@ -27,7 +27,7 @@
       "stats": {
         "health": 100
       },
-      "type": "tank",
+      "type": "Tank",
       "class": "warrior"
     }
   ]

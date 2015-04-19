@@ -5,6 +5,6 @@
   "stats": {
     "health": 100
   },
-  "type": "damage",
+  "type": "Melee Damage Dealer",
   "class": "rogue"
 }
