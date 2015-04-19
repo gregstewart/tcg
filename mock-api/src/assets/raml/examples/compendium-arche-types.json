@@ -9,6 +9,10 @@
   },
   {
     "id": 3,
-    "type": "Damage"
+    "type": "Melee Damage Dealer"
+  },
+  {
+    "id": 4,
+    "type": "Ranged Damage Dealer"
   }
 ]

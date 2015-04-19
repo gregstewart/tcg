@@ -56,11 +56,11 @@ mediaType: application/json
         headers:
           Authorization:
             example: "Authorization = Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=="
-          body:
-            example: |
-              {
-                "success": "Your account has been created"
-              }
+        body:
+          example: |
+            {
+              "success": "Your account has been created"
+            }
 /me:
   description: My endpoint
   get:
@@ -77,7 +77,7 @@ mediaType: application/json
           example: |
             {
               "accountHref": "me/account",
-              "playerChareactersHref": "me/player-characters"
+              "playerCharactersHref": "me/player-characters"
             }
   /account:
     description: Account details
@@ -111,6 +111,24 @@ mediaType: application/json
         200:
           body:
             example: !include examples/player-characters-list.json
+    post:
+      description: create new toon
+      body:
+        example: |
+          {
+            "race": "Orc",
+            "archeType": "Ranged Damage Dealer",
+          }
+      responses:
+        201:
+          body:
+            example: |
+              {
+                "race": "Orc",
+                "archeType": "Ranged Damage Dealer",
+                "name": "Rexxar",
+                "characterHref": "me/player-characters/1"
+              }
     /{id}:
       get:
         description: returns the details of a player character
@@ -153,7 +171,7 @@ mediaType: application/json
             200:
               body:
                 example: !include examples/encounter-round.json
-/compedium:
+/compendium:
   description: returns available resources
   get:
   /monsters:
