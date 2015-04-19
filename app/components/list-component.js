@@ -6,14 +6,11 @@ const ListComponent = React.createClass({
       <ul>
       {
         this.props.entities.map((entity) => {
-          let deferedEntity = entity.deref();
-          return (
-            <ListItem entity={deferedEntity} />
-          )
+          return <ListItem entity={entity.deref()} />;
         })
       }
       </ul>
-    )
+    );
   }
 });
 

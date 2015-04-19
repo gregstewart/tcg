@@ -25,7 +25,6 @@ const Application = reflex.application.create({
     let page = reflex.routes.page;
     return reflex.routes.define(
       page('/', home),
-
       page('/player-races', playerRaces)
     );
   },

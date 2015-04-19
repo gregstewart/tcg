@@ -1,8 +1,7 @@
 const ListItem = React.createClass({
   render () {
-    return (
-      <li key={this.props.entity.id}>{this.props.entity.name}</li>
-    )
+    let entity = this.props.entity;
+    return <li key={entity.id}>{entity.name}</li>;
   }
 });
 
