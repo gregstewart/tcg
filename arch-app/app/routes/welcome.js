@@ -13,7 +13,7 @@ class WelcomeRoute extends BaseRoute {
 
   render() {
     return layout(
-      d.h1('Welcome! This is your first Arch app.'),
+      d.h1('Welcome! This is your first Arch app!'),
       d.p(this.props.appState.get('state.message').deref())
     );
   }

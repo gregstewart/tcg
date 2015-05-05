@@ -9,7 +9,7 @@ class Layout extends React.Component {
 
   render() {
     return d.div({
-      className: wrapper
+      className: 'wrapper'
     }, this.props.children);
   }
 }
