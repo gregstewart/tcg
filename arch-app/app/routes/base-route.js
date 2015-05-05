@@ -21,7 +21,7 @@ class BaseRoute extends React.Component {
   }
 
   getTitle(title) {
-    if(title) {
+    if (title) {
       return `Arch App | ${title}`;
     } else {
       return "Arch App";

@@ -13,7 +13,7 @@ let app = arch.application.create({
   },
 
   start(appState) {
-    appState.get('state.message').update( () => 'I was updated!' );
+    appState.get('state.message').update(() => 'I was updated!');
   },
 
   routes() {
@@ -27,4 +27,3 @@ let app = arch.application.create({
 });
 
 export default app;
-
