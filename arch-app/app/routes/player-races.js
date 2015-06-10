@@ -3,7 +3,7 @@ import ListComponent from '../components/list-component';
 
 class PlayerRaces extends BaseRoute {
   getTitle() {
-    return super.getTitle("Player Races!");
+    return super.getTitle('Player Races!');
   }
 
   render() {
@@ -13,7 +13,7 @@ class PlayerRaces extends BaseRoute {
         <h1>Player Races</h1>
         <ListComponent entities={entities} />
       </div>
-    )
+    );
   }
 }
 

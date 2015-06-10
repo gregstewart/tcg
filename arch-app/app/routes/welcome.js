@@ -1,9 +1,8 @@
 import BaseRoute from './base-route';
-import arch from 'arch';
 
 class WelcomeRoute extends BaseRoute {
   getTitle() {
-    return super.getTitle("Welcome!");
+    return super.getTitle('Welcome!');
   }
 
   render() {
@@ -12,7 +11,7 @@ class WelcomeRoute extends BaseRoute {
       <h1>Welcome! This is your first Arch app!</h1>
       <a href="/player-races">Player races</a>
       </div>
-    )
+    );
   }
 }
 

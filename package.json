@@ -8,9 +8,5 @@
     "test": "npm test"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "react": "0.12.2",
-    "reflex": "https://github.com/redbadger/reflex/archive/0.0.3a.tar.gz"
-  }
+  "license": "ISC"
 }
