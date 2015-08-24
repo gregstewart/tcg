@@ -9,8 +9,8 @@
     "arch": "git+https://github.com/redbadger/arch"
   },
   "devDependencies": {
-    "babel-eslint": "^3.1.15",
-    "eslint": "^0.22.1",
-    "eslint-plugin-react": "^2.5.0"
+    "babel-eslint": "^4.0.10",
+    "eslint": "^1.2.1",
+    "eslint-plugin-react": "^3.2.3"
   }
 }
