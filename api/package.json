@@ -1,0 +1,21 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.8.21",
+    "hapi": "^9.0.3",
+    "mori": "^0.3.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.0.10",
+    "eslint": "^1.2.1"
+  }
+}
