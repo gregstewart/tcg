@@ -1,5 +1,4 @@
 .idea/
-dist/
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
@@ -26,6 +25,9 @@ coverage
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
+
+# Concatenated files
+dist/
 
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
