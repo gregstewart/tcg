@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "NODE_ENV=test mocha --recursive --compilers js:babel-core/register"
+    "test": "NODE_ENV=test mocha --recursive --compilers js:babel-core/register",
+    "lint": "node_modules/.bin/eslint app/** test/**",
+    "pretest": "npm run lint"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +26,7 @@
     "babel-loader": "^5.3.2",
     "chai": "^3.3.0",
     "eslint": "^1.5.1",
+    "eslint-plugin-react": "^3.4.2",
     "jsdom": "^6.5.1",
     "mocha": "^2.3.3",
     "mocha-jsdom": "^1.0.0",

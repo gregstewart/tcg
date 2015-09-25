@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
 class Counter extends Component {
+  displayName: 'Counter'
   render() {
     const { increment, incrementIfOdd, incrementAsync, decrement, counter } = this.props;
     return (
@@ -20,11 +21,11 @@ class Counter extends Component {
 }
 
 Counter.propTypes = {
-  increment: PropTypes.func.isRequired,
-  incrementIfOdd: PropTypes.func.isRequired,
-  incrementAsync: PropTypes.func.isRequired,
-  decrement: PropTypes.func.isRequired,
   counter: PropTypes.number.isRequired,
+  decrement: PropTypes.func.isRequired,
+  increment: PropTypes.func.isRequired,
+  incrementAsync: PropTypes.func.isRequired,
+  incrementIfOdd: PropTypes.func.isRequired
 };
 
 export default Counter;
