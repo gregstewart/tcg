@@ -1,16 +1,17 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Counter from '../components/Counter';
-import * as CounterActions from '../actions/counter';
+import PlayerTile from '../components/PlayerTile';
+import * as CommandActions from '../actions/commands';
 
 function mapStateToProps(state) {
   return {
-    counter: state.counter
+    health: state.entities[0].health,
+    name: state.entities[0].name
   };
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(CounterActions, dispatch);
+  return bindActionCreators(CommandActions, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Counter);
+export default connect(mapStateToProps, mapDispatchToProps)(PlayerTile);
